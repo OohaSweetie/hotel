@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<form action="/search.html">
+    <h1>Register</h1>
+    <hr>
+	<table cellpadding="8" cellspacing="8">
+	
+	<tr>
+   <td> <label for="name"><b>Name</b></label> </td>
+   <td> <input type="text" placeholder="Enter full name" name="name" required></td>
+   </tr>
+
+	<tr>
+   <td> <label for="email"><b>Email</b></label></td>
+   <td> <input type="text" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required> </td>
+   </tr>
+	
+	<tr>
+	<td><label for="tel"><b>Contact</b></label></td>
+    <td><input type="tel" placeholder="Enter contact number" name="tel" pattern="[0-9]{10}"  required></td>
+	</tr>
+	
+	<tr>
+   <td> <label for="address"><b>Address</b></label></td>
+  <td>  <input type="textarea" rows="4" cols="30" placeholder="Enter Address" name="address"  required></td>
+  </tr>
+	
+	<tr>
+	<td><label for="gender"><b>Gender</b></label></td>
+
+<td>	<input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female </td>
+ </tr>
+	<br>
+	<br>
+	<tr>
+ <td>   <label for="psw"><b>Password</b></label></td>
+  <td>  <input type="password" placeholder="Enter Password" name="psw" pattern=".{6,}" title="Six or more characters" required></td>
+  </tr>
+	
+	<tr>
+   <td> <label for="psw-repeat"><b>Repeat Password</b></label></td>
+ <td>   <input type="password" placeholder="Repeat Password" name="psw-repeat" pattern=".{6,}" title="Six or more characters" required></td>
+	
+	
+ <tr> <td>  <button type="submit" class="registerbtn" href="login.html">Register</button> </td></tr>
+ </table>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="login.html">login</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>

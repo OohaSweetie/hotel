@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<form action="/hotel.html">
+    <h1>Search Hotels</h1>
+    <hr>
+	<table cellpadding="8" cellspacing="8">
+	
+	<tr>
+   <td> <label for="city" required><b>Select City</b></label> </td>
+   <td> <select name="cars">
+   <option value="">Choose One</option>
+  <option value="pune">Pune</option>
+  <option value="mumbai">Mumbai</option>
+  <option value="bangalore">Bangalore</option>
+  <option value="chennai">Chennai</option>
+  <option value="kolkata">Kolkata</option>
+  <option value="delhi">Delhi</option>
+</select></td>
+   </tr>
+
+	<tr>
+   <td> <label for="date"><b>Check-In Date</b></label></td>
+   <td> <input type="date" placeholder="Enter Check-In Date" name="date" required> </td>
+   </tr>
+	
+	<tr>
+   <td> <label for="date"><b>Check-Out Date</b></label></td>
+   <td> <input type="date" placeholder="Enter Check-In Date" name="date" required> </td>
+   </tr>
+	
+	<tr>
+   <td> <label for="number"><b>Number Of Rooms</b></label></td>
+  <td>  <input type="number" placeholder="Enter the number of rooms to be booked" name="number" min="1" required></td>
+  </tr>
+	
+ <tr> <td>  <button type="submit" >Search</button> </td></tr>
+ </table>
+ 
+</form>
+
+</body>
+</html>
